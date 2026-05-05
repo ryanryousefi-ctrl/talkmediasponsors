@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -37,81 +37,96 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero__inner">
-      <div class="hero__badge">#1 Award-Winning Local News in NW Broward County</div>
-      <h1 class="hero__headline">Promote Your Business to <br class="hide-mobile"/>Your Neighbors</h1>
-      <p class="hero__sub">Talk Media is Broward County's #1 hyperlocal news source — serving Coral Springs, Parkland, Coconut Creek, Margate, Tamarac, and Sunrise with trusted local news since 2012.</p>
-      <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary btn--lg">Get My Free Media Kit</a>
-        <a href="#options" class="btn btn--ghost btn--lg">View Ad Options</a>
-      </div>
-      <div class="hero__stats">
-        <div class="hero__stat">
-          <span class="hero__stat-number">6</span>
-          <span class="hero__stat-label">Award-Winning Sites</span>
+  <!-- LANDING HERO -->
+  <section class="landing" id="home">
+    <div class="landing__main">
+      <div class="container landing__inner">
+
+        <!-- Left: Sharon polaroid -->
+        <div class="landing__left">
+          <div class="polaroid polaroid--sharon">
+            <div class="tape tape--tl"></div>
+            <img src="sharon.jpg" alt="Sharon Aron Baron, Founder of Talk Media LLC" class="polaroid__img" />
+            <div class="polaroid__caption">
+              <span class="polaroid__script">Sharon Aron Baron</span>
+              <span class="polaroid__role">Founder &amp; Publisher, Talk Media LLC</span>
+            </div>
+          </div>
         </div>
-        <div class="hero__stat">
-          <span class="hero__stat-number">50K+</span>
-          <span class="hero__stat-label">Facebook Community Members</span>
+
+        <!-- Right: Headline + logo grid -->
+        <div class="landing__right">
+          <p class="landing__eyebrow">Meet the Founder</p>
+          <h1 class="landing__headline">The local voice behind Broward County's trusted hyperlocal publications.</h1>
+          <div class="landing__rule"></div>
+          <p class="landing__sub">Talk Media brings trusted, timely news to local communities across Northwest Broward County.</p>
+
+          <div class="logo-grid">
+            <div class="polaroid polaroid--logo" style="--rot: -2deg">
+              <div class="tape tape--tc"></div>
+              <div class="lc lc--cs">
+                <span>Coral<br>Springs<br>Talk</span>
+              </div>
+            </div>
+            <div class="polaroid polaroid--logo" style="--rot: 1.5deg">
+              <div class="tape tape--tc"></div>
+              <div class="lc lc--pk">
+                <span>Parkland<br>Talk</span>
+              </div>
+            </div>
+            <div class="polaroid polaroid--logo" style="--rot: -1deg">
+              <div class="tape tape--tc"></div>
+              <div class="lc lc--mg">
+                <span>MARGATE<br>TALK</span>
+              </div>
+            </div>
+            <div class="polaroid polaroid--logo" style="--rot: 2deg">
+              <div class="tape tape--tc"></div>
+              <div class="lc lc--cc">
+                <span>COCONUT<br>CREEK<br>TALK</span>
+              </div>
+            </div>
+            <div class="polaroid polaroid--logo" style="--rot: -1.5deg">
+              <div class="tape tape--tc"></div>
+              <div class="lc lc--tm">
+                <span>tamarac<br>talk</span>
+              </div>
+            </div>
+            <div class="polaroid polaroid--logo" style="--rot: 1deg">
+              <div class="tape tape--tc"></div>
+              <div class="lc lc--sr">
+                <div class="lc__sun"></div>
+                <span>SUNRISE<br>TALK</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hero__stat">
-          <span class="hero__stat-number">35K+</span>
-          <span class="hero__stat-label">Newsletter Subscribers</span>
-        </div>
-        <div class="hero__stat">
-          <span class="hero__stat-number">#1</span>
-          <span class="hero__stat-label">Broward County Hyperlocal News</span>
-        </div>
+
       </div>
     </div>
-  </section>
 
-  <!-- CREDIBILITY STRIP -->
-  <section class="trust">
-    <div class="container trust__inner">
-      <p class="trust__label">Trusted by local businesses across</p>
-      <div class="trust__cities">
-        <span>Coral Springs</span>
-        <span class="dot">·</span>
-        <span>Margate</span>
-        <span class="dot">·</span>
-        <span>Coconut Creek</span>
-        <span class="dot">·</span>
-        <span>Tamarac</span>
-        <span class="dot">·</span>
-        <span>Sunrise</span>
-        <span class="dot">·</span>
-        <span>Parkland</span>
-      </div>
-      <p class="trust__since">Broward County's #1 hyperlocal news source since 2012</p>
-    </div>
-  </section>
-
-  <!-- FOUNDER -->
-  <section class="founder">
-    <div class="container founder__inner">
-      <div class="founder__photo-wrap">
-        <img src="sharon.jpg" alt="Sharon Aron Baron, Founder of Talk Media LLC" class="founder__photo" />
-      </div>
-      <div class="founder__content">
-        <div class="founder__label">Meet the Founder</div>
-        <h2 class="founder__name">Sharon Aron Baron</h2>
-        <p class="founder__title">Founder &amp; Publisher, Talk Media LLC</p>
-        <p class="founder__bio">Sharon studied Journalism at Texas State University, where she earned her degree. After years in sales, in 2010 she returned to her love of writing and connecting neighbors — creating six hyperlocal websites to bring timely, trusted news to NW Broward County communities.</p>
-        <div class="founder__pubs">
-          <span>Coral Springs Talk</span>
-          <span class="dot">·</span>
-          <span>Coconut Creek Talk</span>
-          <span class="dot">·</span>
-          <span>Margate Talk</span>
-          <span class="dot">·</span>
-          <span>Parkland Talk</span>
-          <span class="dot">·</span>
-          <span>Tamarac Talk</span>
-          <span class="dot">·</span>
-          <span>Sunrise Talk</span>
+    <!-- Stats bar -->
+    <div class="landing__stats-bar">
+      <div class="container landing__stats">
+        <div class="landing__stat">
+          <div class="landing__stat-icon">📍</div>
+          <div class="landing__stat-strong">6 Communities</div>
+          <div class="landing__stat-desc">Coral Springs, Parkland, Coconut Creek, Margate, Tamarac &amp; Sunrise</div>
+        </div>
+        <div class="landing__stat">
+          <div class="landing__stat-icon">📰</div>
+          <div class="landing__stat-strong">#1 Local Source</div>
+          <div class="landing__stat-desc">Broward County's #1 hyperlocal news source since 2012</div>
+        </div>
+        <div class="landing__stat">
+          <div class="landing__stat-icon">👥</div>
+          <div class="landing__stat-strong">50K+ Community</div>
+          <div class="landing__stat-desc">Facebook community members and growing</div>
+        </div>
+        <div class="landing__stat">
+          <div class="landing__stat-icon">✉️</div>
+          <div class="landing__stat-strong">35K+ Subscribers</div>
+          <div class="landing__stat-desc">Newsletter subscribers get trusted local news delivered weekly</div>
         </div>
       </div>
     </div>
