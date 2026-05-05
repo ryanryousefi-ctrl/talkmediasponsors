@@ -62,43 +62,141 @@
           <p class="landing__sub">Talk Media brings trusted, timely news to local communities across Northwest Broward County.</p>
 
           <div class="logo-grid">
+
+            <!-- Coral Springs Talk -->
             <div class="polaroid polaroid--logo" style="--rot: -2deg">
               <div class="tape tape--tc"></div>
-              <div class="lc lc--cs">
-                <span>Coral<br>Springs<br>Talk</span>
-              </div>
+              <svg class="pub-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="cs-bg" cx="45%" cy="30%" r="70%">
+                    <stop offset="0%" stop-color="#a8ddf0"/>
+                    <stop offset="100%" stop-color="#2a7060"/>
+                  </radialGradient>
+                  <clipPath id="cs-clip"><circle cx="100" cy="100" r="87"/></clipPath>
+                </defs>
+                <circle cx="100" cy="100" r="99" fill="#e8d94a"/>
+                <circle cx="100" cy="100" r="87" fill="url(#cs-bg)"/>
+                <text x="100" y="68"  text-anchor="middle" font-family="Georgia,serif" font-size="29" font-style="italic" font-weight="bold" fill="#1a5045">Coral</text>
+                <text x="100" y="103" text-anchor="middle" font-family="Georgia,serif" font-size="29" font-style="italic" font-weight="bold" fill="#1a5045">Springs</text>
+                <text x="100" y="138" text-anchor="middle" font-family="Georgia,serif" font-size="29" font-style="italic" font-weight="bold" fill="#1a5045">Talk</text>
+              </svg>
             </div>
+
+            <!-- Parkland Talk -->
             <div class="polaroid polaroid--logo" style="--rot: 1.5deg">
               <div class="tape tape--tc"></div>
-              <div class="lc lc--pk">
-                <span>Parkland<br>Talk</span>
-              </div>
+              <svg class="pub-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="pk-clip"><circle cx="100" cy="100" r="87"/></clipPath>
+                </defs>
+                <circle cx="100" cy="100" r="99" fill="#c8d840"/>
+                <circle cx="100" cy="100" r="87" fill="#5ab4e0"/>
+                <!-- Grass band -->
+                <rect x="13" y="148" width="174" height="50" fill="#5ab034" clip-path="url(#pk-clip)"/>
+                <ellipse cx="100" cy="148" rx="90" ry="14" fill="#5ab034" clip-path="url(#pk-clip)"/>
+                <!-- Yellow flowers -->
+                <circle cx="48"  cy="160" r="6" fill="#f5e050"/>
+                <circle cx="75"  cy="165" r="5" fill="#f5e050"/>
+                <circle cx="130" cy="162" r="6" fill="#f5e050"/>
+                <circle cx="155" cy="156" r="5" fill="#f5e050"/>
+                <!-- Text -->
+                <text x="100" y="98"  text-anchor="middle" font-family="Georgia,serif" font-size="32" font-style="italic" font-weight="bold" fill="#ffffff">Parkland</text>
+                <text x="100" y="133" text-anchor="middle" font-family="Georgia,serif" font-size="32" font-style="italic" font-weight="bold" fill="#ffffff">Talk</text>
+              </svg>
             </div>
+
+            <!-- Margate Talk -->
             <div class="polaroid polaroid--logo" style="--rot: -1deg">
               <div class="tape tape--tc"></div>
-              <div class="lc lc--mg">
-                <span>MARGATE<br>TALK</span>
-              </div>
+              <svg class="pub-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="mg-sky" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#d0eaf8"/>
+                    <stop offset="100%" stop-color="#8ac8f0"/>
+                  </linearGradient>
+                  <clipPath id="mg-clip"><circle cx="100" cy="100" r="87"/></clipPath>
+                </defs>
+                <circle cx="100" cy="100" r="99" fill="#4888cc"/>
+                <circle cx="100" cy="100" r="87" fill="url(#mg-sky)"/>
+                <!-- Rolling hills -->
+                <path d="M13,145 Q40,118 70,135 Q100,152 130,130 Q160,108 187,128 L187,187 L13,187 Z" fill="#7ab858" clip-path="url(#mg-clip)"/>
+                <path d="M13,158 Q50,140 80,150 Q110,160 140,145 Q165,132 187,148 L187,187 L13,187 Z" fill="#5a9840" clip-path="url(#mg-clip)"/>
+                <!-- Text -->
+                <text x="100" y="92"  text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="900" fill="#1a4a90">MARGATE</text>
+                <text x="100" y="122" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="900" fill="#1a4a90">TALK</text>
+              </svg>
             </div>
+
+            <!-- Coconut Creek Talk -->
             <div class="polaroid polaroid--logo" style="--rot: 2deg">
               <div class="tape tape--tc"></div>
-              <div class="lc lc--cc">
-                <span>COCONUT<br>CREEK<br>TALK</span>
-              </div>
+              <svg class="pub-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <clipPath id="cc-clip"><circle cx="100" cy="100" r="87"/></clipPath>
+                </defs>
+                <circle cx="100" cy="100" r="99" fill="#e8761a"/>
+                <circle cx="100" cy="100" r="87" fill="#c8d870"/>
+                <!-- Butterfly watermark -->
+                <g opacity="0.18" clip-path="url(#cc-clip)">
+                  <ellipse cx="78"  cy="90" rx="28" ry="38" fill="#8aaa30" transform="rotate(-25,78,90)"/>
+                  <ellipse cx="122" cy="90" rx="28" ry="38" fill="#8aaa30" transform="rotate(25,122,90)"/>
+                  <ellipse cx="78"  cy="118" rx="22" ry="28" fill="#8aaa30" transform="rotate(15,78,118)"/>
+                  <ellipse cx="122" cy="118" rx="22" ry="28" fill="#8aaa30" transform="rotate(-15,122,118)"/>
+                  <ellipse cx="100" cy="104" rx="5"  ry="20" fill="#6a8a20"/>
+                </g>
+                <!-- Text -->
+                <text x="100" y="72"  text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="#c05808">COCONUT</text>
+                <text x="100" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="#c05808">CREEK</text>
+                <text x="100" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="#c05808">TALK</text>
+              </svg>
             </div>
+
+            <!-- Tamarac Talk -->
             <div class="polaroid polaroid--logo" style="--rot: -1.5deg">
               <div class="tape tape--tc"></div>
-              <div class="lc lc--tm">
-                <span>tamarac<br>talk</span>
-              </div>
+              <svg class="pub-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="99" fill="#e8271c"/>
+                <circle cx="100" cy="100" r="87" fill="#ffffff"/>
+                <text x="100" y="97"  text-anchor="middle" font-family="Impact,'Arial Narrow',sans-serif" font-size="34" font-style="italic" fill="#e8271c" letter-spacing="1">tamarac</text>
+                <text x="100" y="132" text-anchor="middle" font-family="Impact,'Arial Narrow',sans-serif" font-size="34" font-style="italic" fill="#e8271c" letter-spacing="2">talk</text>
+              </svg>
             </div>
+
+            <!-- Sunrise Talk -->
             <div class="polaroid polaroid--logo" style="--rot: 1deg">
               <div class="tape tape--tc"></div>
-              <div class="lc lc--sr">
-                <div class="lc__sun"></div>
-                <span>SUNRISE<br>TALK</span>
-              </div>
+              <svg class="pub-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="sr-bg" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%"   stop-color="#7ecef4"/>
+                    <stop offset="55%"  stop-color="#b8e0f8"/>
+                    <stop offset="100%" stop-color="#f5c842"/>
+                  </linearGradient>
+                  <clipPath id="sr-clip"><circle cx="100" cy="100" r="87"/></clipPath>
+                </defs>
+                <circle cx="100" cy="100" r="99" fill="#2563eb"/>
+                <circle cx="100" cy="100" r="87" fill="url(#sr-bg)"/>
+                <!-- Sun rays -->
+                <g fill="#f9a020" clip-path="url(#sr-clip)">
+                  <rect x="97" y="108" width="6" height="22" rx="3" transform="rotate(0,100,130)"/>
+                  <rect x="97" y="108" width="6" height="22" rx="3" transform="rotate(45,100,130)"/>
+                  <rect x="97" y="108" width="6" height="22" rx="3" transform="rotate(90,100,130)"/>
+                  <rect x="97" y="108" width="6" height="22" rx="3" transform="rotate(135,100,130)"/>
+                  <rect x="97" y="108" width="6" height="18" rx="3" transform="rotate(22.5,100,130)"/>
+                  <rect x="97" y="108" width="6" height="18" rx="3" transform="rotate(67.5,100,130)"/>
+                  <rect x="97" y="108" width="6" height="18" rx="3" transform="rotate(112.5,100,130)"/>
+                  <rect x="97" y="108" width="6" height="18" rx="3" transform="rotate(157.5,100,130)"/>
+                </g>
+                <!-- Sun body -->
+                <circle cx="100" cy="130" r="16" fill="#f9a020"/>
+                <!-- Horizon line -->
+                <rect x="13" y="147" width="174" height="4" fill="#f5c030" opacity="0.6" clip-path="url(#sr-clip)"/>
+                <!-- Text -->
+                <text x="100" y="72"  text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="900" fill="#0d2a6e">SUNRISE</text>
+                <text x="100" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="900" fill="#0d2a6e">TALK</text>
+              </svg>
             </div>
+
           </div>
         </div>
 

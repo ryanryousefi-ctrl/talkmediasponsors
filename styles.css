@@ -182,19 +182,9 @@ body {
 
 /* Logo circles */
 .lc {
-  width: 100%; aspect-ratio: 1; border-radius: 50%;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  text-align: center; padding: 10px; font-weight: 800; line-height: 1.2;
-  font-size: clamp(0.55rem, 1.1vw, 0.7rem);
+  /* old .lc styles removed — replaced by inline SVGs */
 }
-.lc span { display: block; }
-.lc--cs { background: radial-gradient(circle at 45% 35%, #a8ddf0 0%, #2e8070 65%); border: 5px solid #e8d94a; color: #e8d94a; font-style: italic; font-family: Georgia, serif; font-size: clamp(0.6rem, 1.2vw, 0.75rem); }
-.lc--pk { background: linear-gradient(180deg, #6ec6e8 0%, #4aabe0 45%, #5ab034 100%); border: 5px solid #c8d840; color: #fff; font-style: italic; font-family: Georgia, serif; font-size: clamp(0.65rem, 1.3vw, 0.8rem); }
-.lc--mg { background: linear-gradient(180deg, #c0ddf5 0%, #8ac0e8 50%, #6aaa58 100%); border: 5px solid #4888cc; color: #1a5090; font-family: Arial, sans-serif; font-weight: 900; }
-.lc--cc { background: radial-gradient(circle, #d8e890 0%, #b8d860 100%); border: 5px solid #e8761a; color: #c05808; font-family: Arial, sans-serif; font-weight: 900; }
-.lc--tm { background: #fff; border: 5px solid #e8271c; color: #e8271c; font-family: Impact, "Arial Narrow", sans-serif; font-style: italic; font-size: clamp(0.7rem, 1.4vw, 0.85rem); }
-.lc--sr { background: linear-gradient(180deg, #87ceeb 0%, #b8e0f8 40%, #f5d060 100%); border: 5px solid #2563eb; color: #1a2a6e; font-family: Arial, sans-serif; font-weight: 900; }
-.lc__sun { width: 20px; height: 20px; border-radius: 50%; background: #f9a020; box-shadow: 0 0 0 3px rgba(249,160,32,.3); margin-bottom: 4px; }
+.pub-svg { display: block; width: 100%; height: auto; border-radius: 2px; }
 
 /* --- Stats bar --- */
 .landing__stats-bar { background: #fff; border-top: 1px solid var(--gray-200); padding: 28px 0; }
