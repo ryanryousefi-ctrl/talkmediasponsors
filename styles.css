@@ -337,8 +337,12 @@ body {
   background: var(--white); border: 1.5px solid var(--gray-200);
   border-radius: var(--radius-lg); padding: 24px 14px 20px;
   text-align: center; transition: all var(--transition);
+  text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;
 }
 .pub-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.polaroid--logo a { display: block; line-height: 0; }
+.polaroid--logo a:hover img { opacity: 0.88; transition: opacity 0.2s; }
 
 .pub-card__circle {
   width: 60px; height: 60px; border-radius: 50%;

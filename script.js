@@ -139,16 +139,28 @@
     btn.disabled = true;
     btn.textContent = 'Sending…';
 
-    // Simulate async submission
-    setTimeout(() => {
-      // Hide all form children except success
-      Array.from(form.children).forEach(child => {
-        if (child !== successEl) child.style.display = 'none';
-      });
-      successEl.classList.add('visible');
-      successEl.style.display = 'block';
-      form.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 900);
+    fetch('https://formspree.io/ryanryousefi@gmail.com', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function (response) {
+      if (response.ok) {
+        Array.from(form.children).forEach(function (child) {
+          if (child !== successEl) child.style.display = 'none';
+        });
+        successEl.classList.add('visible');
+        successEl.style.display = 'block';
+        form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Get My Free Media Kit';
+        alert('Something went wrong. Please email ryanryousefi@gmail.com directly.');
+      }
+    }).catch(function () {
+      btn.disabled = false;
+      btn.textContent = 'Get My Free Media Kit';
+      alert('Network error. Please try again or email ryanryousefi@gmail.com directly.');
+    });
   });
 })();
 
