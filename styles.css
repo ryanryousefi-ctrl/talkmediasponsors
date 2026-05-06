@@ -360,6 +360,13 @@ body {
 .pub-card--sr { border-top: 3px solid #e87820; }
 
 .pub-card__logo-img { width: 90px; height: 90px; object-fit: contain; margin: 0 auto 16px; display: block; }
+
+/* Margate: clip to circle to hide black JPEG corners */
+img[src="margate.jpg"] { border-radius: 50%; }
+
+/* Parkland: scale up to match visual size of other logos */
+.pub-card__logo-img[src="parkland.jpg"] { width: 115px; height: 115px; }
+.pub-svg[src="parkland.jpg"] { transform: scale(1.15); transform-origin: center; }
 .pub-card h3 { font-size: 0.82rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
 .pub-card p  { font-size: 0.75rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 10px; }
 .pub-card__reach { font-size: 0.65rem; color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
