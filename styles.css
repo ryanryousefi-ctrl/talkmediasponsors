@@ -143,12 +143,12 @@ body {
 }
 .landing__main {
   background: linear-gradient(135deg, rgba(10,22,44,.72) 0%, rgba(10,22,44,.45) 60%, rgba(10,22,44,.25) 100%);
-  padding: 28px 0 44px;
+  padding: 0 0 36px;
 }
 .landing__inner {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 6px;
 }
 .landing__bottom {
   display: grid;
@@ -182,7 +182,7 @@ body {
 .landing__eyebrow { font-size: 0.75rem; font-weight: 700; letter-spacing: .9px; text-transform: uppercase; color: rgba(255,255,255,.65); margin-bottom: 16px; }
 .landing__headline { font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.9rem); font-weight: 800; color: var(--white); line-height: 1.18; letter-spacing: -.5px; margin-bottom: 16px; text-shadow: 0 2px 12px rgba(0,0,0,.3); }
 .landing__rule { width: 56px; height: 3px; background: rgba(255,255,255,.45); border-radius: 2px; margin-bottom: 18px; }
-.landing__sub  { font-size: 1rem; color: rgba(255,255,255,.72); line-height: 1.65; margin-bottom: 32px; max-width: 520px; }
+.landing__sub  { font-size: 1rem; color: rgba(255,255,255,.72); line-height: 1.65; margin-bottom: 8px; max-width: 520px; }
 
 /* --- Logo grid (3x2) --- */
 .logo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
