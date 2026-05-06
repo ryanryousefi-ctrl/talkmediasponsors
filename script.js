@@ -140,34 +140,42 @@
     btn.textContent = 'Sending…';
 
     const data = new FormData(form);
-    const name    = (data.get('firstName') || '') + ' ' + (data.get('lastName') || '');
-    const subject = 'Talk Media Advertising Inquiry – ' + name.trim();
-    const body = [
-      'Name: '         + name.trim(),
-      'Email: '        + (data.get('email')    || ''),
-      'Phone: '        + (data.get('phone')    || 'Not provided'),
-      'Business: '     + (data.get('business') || ''),
-      'Target City: '  + (data.get('city')     || ''),
-      'Interested In: '+ (data.get('adType')   || 'Not specified'),
-      '',
-      'Message:',
-      data.get('message') || 'No message provided'
-    ].join('\n');
+    const name = (data.get('firstName') || '') + ' ' + (data.get('lastName') || '');
 
-    const mailto = document.createElement('a');
-    mailto.href = 'mailto:ryanryousefi@gmail.com'
-      + '?subject=' + encodeURIComponent(subject)
-      + '&body='    + encodeURIComponent(body);
-    mailto.click();
-
-    setTimeout(function () {
-      Array.from(form.children).forEach(function (child) {
-        if (child !== successEl) child.style.display = 'none';
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key:   'PASTE_YOUR_WEB3FORMS_KEY_HERE',
+        subject:      'Talk Media Advertising Inquiry – ' + name.trim(),
+        from_name:    name.trim(),
+        name:         name.trim(),
+        email:        data.get('email')    || '',
+        phone:        data.get('phone')    || 'Not provided',
+        business:     data.get('business') || '',
+        city:         data.get('city')     || '',
+        interested_in:data.get('adType')   || 'Not specified',
+        message:      data.get('message')  || 'No message provided'
+      })
+    }).then(function (res) { return res.json(); })
+      .then(function (json) {
+        if (json.success) {
+          Array.from(form.children).forEach(function (child) {
+            if (child !== successEl) child.style.display = 'none';
+          });
+          successEl.classList.add('visible');
+          successEl.style.display = 'block';
+          form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          btn.disabled = false;
+          btn.textContent = 'Send My Request';
+          alert('Something went wrong: ' + (json.message || 'Unknown error'));
+        }
+      }).catch(function () {
+        btn.disabled = false;
+        btn.textContent = 'Send My Request';
+        alert('Network error — please try again.');
       });
-      successEl.classList.add('visible');
-      successEl.style.display = 'block';
-      form.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 400);
   });
 })();
 
