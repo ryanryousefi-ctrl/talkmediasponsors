@@ -359,7 +359,7 @@ body {
 .pub-card--tm { border-top: 3px solid #e8271c; }
 .pub-card--sr { border-top: 3px solid #e87820; }
 
-.pub-card__logo-img { width: 64px; height: 64px; object-fit: contain; margin: 0 auto 16px; display: block; }
+.pub-card__logo-img { width: 90px; height: 90px; object-fit: contain; margin: 0 auto 16px; display: block; }
 .pub-card h3 { font-size: 0.82rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
 .pub-card p  { font-size: 0.75rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 10px; }
 .pub-card__reach { font-size: 0.65rem; color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
