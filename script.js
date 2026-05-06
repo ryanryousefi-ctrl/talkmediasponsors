@@ -139,28 +139,35 @@
     btn.disabled = true;
     btn.textContent = 'Sending…';
 
-    fetch('https://formspree.io/ryanryousefi@gmail.com', {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    }).then(function (response) {
-      if (response.ok) {
-        Array.from(form.children).forEach(function (child) {
-          if (child !== successEl) child.style.display = 'none';
-        });
-        successEl.classList.add('visible');
-        successEl.style.display = 'block';
-        form.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else {
-        btn.disabled = false;
-        btn.textContent = 'Get My Free Media Kit';
-        alert('Something went wrong. Please email ryanryousefi@gmail.com directly.');
-      }
-    }).catch(function () {
-      btn.disabled = false;
-      btn.textContent = 'Get My Free Media Kit';
-      alert('Network error. Please try again or email ryanryousefi@gmail.com directly.');
-    });
+    const data = new FormData(form);
+    const name    = (data.get('firstName') || '') + ' ' + (data.get('lastName') || '');
+    const subject = 'Talk Media Advertising Inquiry – ' + name.trim();
+    const body = [
+      'Name: '         + name.trim(),
+      'Email: '        + (data.get('email')    || ''),
+      'Phone: '        + (data.get('phone')    || 'Not provided'),
+      'Business: '     + (data.get('business') || ''),
+      'Target City: '  + (data.get('city')     || ''),
+      'Interested In: '+ (data.get('adType')   || 'Not specified'),
+      '',
+      'Message:',
+      data.get('message') || 'No message provided'
+    ].join('\n');
+
+    const mailto = document.createElement('a');
+    mailto.href = 'mailto:ryanryousefi@gmail.com'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body='    + encodeURIComponent(body);
+    mailto.click();
+
+    setTimeout(function () {
+      Array.from(form.children).forEach(function (child) {
+        if (child !== successEl) child.style.display = 'none';
+      });
+      successEl.classList.add('visible');
+      successEl.style.display = 'block';
+      form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 400);
   });
 })();
 

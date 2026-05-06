@@ -430,7 +430,7 @@ img[src="margate.jpg"] { border-radius: 50%; }
 .form-group label { font-size: 0.875rem; font-weight: 600; color: var(--gray-800); }
 .form-group .req { color: var(--orange); }
 
-.form-group input,
+.form-group input:not([type="checkbox"]),
 .form-group select,
 .form-group textarea {
   padding: 12px 14px; border: 1.5px solid var(--gray-200); border-radius: 8px;
