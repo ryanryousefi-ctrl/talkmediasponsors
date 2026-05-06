@@ -143,13 +143,13 @@ body {
 }
 .landing__main {
   background: linear-gradient(135deg, rgba(10,22,44,.72) 0%, rgba(10,22,44,.45) 60%, rgba(10,22,44,.25) 100%);
-  padding: 64px 0 56px;
+  padding: 28px 0 44px;
 }
 .landing__inner {
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 60px;
-  align-items: center;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+  align-items: start;
 }
 
 /* --- Polaroid --- */
@@ -490,8 +490,8 @@ body {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-  .landing__inner { grid-template-columns: 260px 1fr; gap: 40px; }
-  .polaroid--sharon { max-width: 260px; }
+  .landing__inner { grid-template-columns: 240px 1fr; gap: 32px; }
+  .polaroid--sharon { max-width: 240px; }
   .polaroid__img { height: 280px; }
   .options__grid { grid-template-columns: repeat(2, 1fr); }
   .pubs__grid    { grid-template-columns: repeat(3, 1fr); }
