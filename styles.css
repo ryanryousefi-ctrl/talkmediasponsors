@@ -331,11 +331,11 @@ body {
 .pubs__logos { text-align: center; margin-bottom: 56px; }
 .pubs__logo-img { max-width: 480px; width: 100%; height: auto; filter: drop-shadow(0 4px 20px rgba(0,0,0,.12)); }
 
-.pubs__grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+.pubs__grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
 
 .pub-card {
   background: var(--white); border: 1.5px solid var(--gray-200);
-  border-radius: var(--radius-lg); padding: 24px 14px 20px;
+  border-radius: var(--radius-lg); padding: 32px 20px 28px;
   text-align: center; transition: all var(--transition);
   text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;
 }
@@ -363,17 +363,17 @@ body {
 .pub-card--tm { border-top: 3px solid #e8271c; }
 .pub-card--sr { border-top: 3px solid #e87820; }
 
-.pub-card__logo-img { width: 90px; height: 90px; object-fit: contain; margin: 0 auto 16px; display: block; }
+.pub-card__logo-img { width: 130px; height: 130px; object-fit: contain; margin: 0 auto 18px; display: block; }
 
 /* Margate: clip to circle to hide black JPEG corners */
 img[src="margate.jpg"] { border-radius: 50%; }
 
 /* Parkland: scale up to match visual size of other logos */
-.pub-card__logo-img[src="parkland.jpg"] { width: 115px; height: 115px; }
+.pub-card__logo-img[src="parkland.jpg"] { width: 160px; height: 160px; }
 .pub-svg[src="parkland.jpg"] { transform: scale(1.15); transform-origin: center; }
-.pub-card h3 { font-size: 0.82rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-.pub-card p  { font-size: 0.75rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 10px; }
-.pub-card__reach { font-size: 0.65rem; color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+.pub-card h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+.pub-card p  { font-size: 0.875rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 10px; }
+.pub-card__reach { font-size: 0.75rem; color: var(--blue); font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
 
 /* ---- TESTIMONIALS ---- */
 .testimonials { padding: 100px 0; background: var(--gray-50); }
