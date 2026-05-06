@@ -142,13 +142,11 @@
     const data = new FormData(form);
     const name = (data.get('firstName') || '') + ' ' + (data.get('lastName') || '');
 
-    fetch('https://api.web3forms.com/submit', {
+    fetch('https://formsubmit.co/ajax/ryanryousefi@gmail.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
-        access_key:   'PASTE_YOUR_WEB3FORMS_KEY_HERE',
-        subject:      'Talk Media Advertising Inquiry – ' + name.trim(),
-        from_name:    name.trim(),
+        _subject:     'Talk Media Advertising Inquiry – ' + name.trim(),
         name:         name.trim(),
         email:        data.get('email')    || '',
         phone:        data.get('phone')    || 'Not provided',
@@ -159,7 +157,7 @@
       })
     }).then(function (res) { return res.json(); })
       .then(function (json) {
-        if (json.success) {
+        if (json.success === 'true' || json.success === true) {
           Array.from(form.children).forEach(function (child) {
             if (child !== successEl) child.style.display = 'none';
           });
@@ -169,7 +167,7 @@
         } else {
           btn.disabled = false;
           btn.textContent = 'Send My Request';
-          alert('Something went wrong: ' + (json.message || 'Unknown error'));
+          alert('Something went wrong — please try again.');
         }
       }).catch(function () {
         btn.disabled = false;
