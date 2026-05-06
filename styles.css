@@ -293,8 +293,10 @@ body {
 .option-card__list li::before { content: '✓'; position: absolute; left: 0; color: var(--blue); font-weight: 700; }
 
 /* ---- AUDIENCE ---- */
-.audience { padding: 100px 0; background: linear-gradient(135deg, #0a1628 0%, #0d1f3e 50%, #112458 100%); }
-.audience__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.audience { padding: 100px 0; background: url('coral-springs-arch.jpg') center center / cover no-repeat; position: relative; }
+.audience::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,22,40,.88) 0%, rgba(13,31,62,.82) 50%, rgba(17,36,88,.80) 100%); z-index: 0; }
+.audience .container { position: relative; z-index: 1; }
+.audience__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; position: relative; z-index: 1; }
 
 .audience__stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .audience__stat-item {
