@@ -241,7 +241,7 @@ body {
 .why__photo-wrap { position: relative; border-radius: var(--radius-lg); overflow: hidden; height: 480px; }
 .why__photo-bg {
   position: absolute; inset: 0;
-  background: linear-gradient(160deg, #0d3860 0%, #1a5c8a 18%, #c8a855 36%, #4a7838 50%, #38906a 62%, #5ab0c8 76%, #1a5080 88%, #0a2848 100%);
+  background: url('coral-springs-bridge.jpg') center center / cover no-repeat;
 }
 .why__photo-fade {
   position: absolute; left: 0; top: 0; bottom: 0; width: 80px;
