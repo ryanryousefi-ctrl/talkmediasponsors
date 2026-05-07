@@ -373,7 +373,7 @@ body {
 img[src="margate.jpg"] { border-radius: 50%; }
 
 /* Parkland: scale up to match visual size of other logos */
-.pub-card__logo-img[src="parkland.jpg"] { width: 160px; height: 160px; }
+.pub-card__logo-img[src="parkland.jpg"] { width: 160px; height: 130px; object-fit: contain; }
 .pub-svg[src="parkland.jpg"] { transform: scale(1.15); transform-origin: center; }
 .pub-card h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
 .pub-card p  { font-size: 0.875rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 10px; }
