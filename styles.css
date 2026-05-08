@@ -331,8 +331,10 @@ body {
 
 /* ---- PUBLICATIONS ---- */
 .publications { padding: 100px 0; background: url('broward-aerial-2.png') center center / cover no-repeat; position: relative; }
-.publications::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,.88); z-index: 0; }
+.publications::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,22,44,.82) 0%, rgba(13,31,62,.75) 100%); z-index: 0; }
 .publications .container { position: relative; z-index: 1; }
+.publications .section-header h2 { color: var(--white); }
+.publications .section-header p { color: rgba(255,255,255,.80); font-weight: 600; }
 
 .pubs__logos { text-align: center; margin-bottom: 56px; }
 .pubs__logo-img { max-width: 480px; width: 100%; height: auto; filter: drop-shadow(0 4px 20px rgba(0,0,0,.12)); }
