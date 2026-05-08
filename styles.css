@@ -203,8 +203,8 @@ body {
 .landing__stat-desc   { font-size: 0.75rem; color: var(--gray-500); line-height: 1.5; }
 
 /* ---- WHY (EDITORIAL TWO-COLUMN) ---- */
-.why { padding: 100px 0; background: url('why-bg.jpg') center center / cover no-repeat; position: relative; }
-.why::before { content: ''; position: absolute; inset: 0; background: rgba(245,245,240,.82); z-index: 0; }
+.why { padding: 100px 0; background: url('why-ads-bg.png') center center / cover no-repeat; position: relative; }
+.why::before { content: ''; position: absolute; inset: 0; background: rgba(245,245,240,.93); z-index: 0; }
 .why .container { position: relative; z-index: 1; }
 .why__editorial { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
 
