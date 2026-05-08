@@ -402,6 +402,37 @@ img[src="margate.jpg"] { border-radius: 50%; }
 .testimonial-card__author strong { display: block; font-size: 0.875rem; color: var(--text); }
 .testimonial-card__author span  { font-size: 0.78rem; color: var(--text-muted); }
 
+/* ---- SPONSOR SPOTLIGHT ---- */
+.spotlight { padding: 100px 0; background: var(--off-white); }
+.spotlight__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+
+.spotlight-card {
+  background: var(--white); border-radius: var(--radius-lg);
+  border: 1.5px solid var(--gray-200); overflow: hidden;
+  transition: all var(--transition); display: flex; flex-direction: column;
+}
+.spotlight-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+
+.spotlight-card__img-wrap { width: 100%; height: 220px; overflow: hidden; background: var(--gray-100); }
+.spotlight-card__img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.spotlight-card__placeholder {
+  width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem; color: var(--text-muted); font-weight: 600;
+  border: 2px dashed var(--gray-200); letter-spacing: .3px;
+}
+
+.spotlight-card__body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+.spotlight-card__tag {
+  display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: .8px;
+  text-transform: uppercase; color: var(--blue); background: rgba(58,130,195,.10);
+  border-radius: 4px; padding: 3px 10px; margin-bottom: 12px; align-self: flex-start;
+}
+.spotlight-card__title { font-family: var(--serif); font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; line-height: 1.3; }
+.spotlight-card__desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.65; flex: 1; margin-bottom: 18px; }
+.spotlight-card__meta { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; border-top: 1px solid var(--gray-200); }
+.spotlight-card__pub { font-size: 0.75rem; font-weight: 700; color: var(--navy); }
+.spotlight-card__result { font-size: 0.75rem; font-weight: 700; color: var(--blue); text-transform: uppercase; letter-spacing: .4px; }
+
 /* ---- CTA BANNER ---- */
 .cta-banner {
   background: linear-gradient(135deg, #0a1628 0%, #0d1f3e 50%, #112458 100%);
@@ -515,6 +546,7 @@ img[src="margate.jpg"] { border-radius: 50%; }
   .polaroid__img { height: 380px; }
   .options__grid { grid-template-columns: repeat(2, 1fr); }
   .pubs__grid    { grid-template-columns: repeat(3, 1fr); }
+  .spotlight__grid { grid-template-columns: 1fr; }
   .contact__wrapper { grid-template-columns: 1fr; }
   .contact__sidebar { display: grid; grid-template-columns: 1fr 1fr; }
   .why__editorial { grid-template-columns: 1fr; gap: 48px; }
