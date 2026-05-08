@@ -263,7 +263,10 @@ body {
 .options { padding: 100px 0; background: url('why-ads-bg.png') center center / cover no-repeat; position: relative; }
 .options::before { content: ''; position: absolute; inset: 0; background: rgba(245,245,240,.93); z-index: 0; }
 .options .container { position: relative; z-index: 1; }
-.options__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.options__grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 24px; }
+.options__grid .option-card { grid-column: span 2; }
+.options__grid .option-card:nth-child(4) { grid-column: 2 / 4; }
+.options__grid .option-card:nth-child(5) { grid-column: 4 / 6; }
 
 .option-card {
   background: var(--white); border: 1.5px solid var(--gray-200);
