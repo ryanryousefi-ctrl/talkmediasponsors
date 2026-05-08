@@ -410,6 +410,7 @@ img[src="margate.jpg"] { border-radius: 50%; }
   background: var(--white); border-radius: var(--radius-lg);
   border: 1.5px solid var(--gray-200); overflow: hidden;
   transition: all var(--transition); display: flex; flex-direction: column;
+  text-decoration: none; color: inherit;
 }
 .spotlight-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 
