@@ -260,7 +260,9 @@ body {
 .why__quote-attr { font-size: 0.75rem; color: rgba(255,255,255,.52); font-weight: 600; }
 
 /* ---- OPTIONS ---- */
-.options { padding: 100px 0; background: var(--gray-50); }
+.options { padding: 100px 0; background: url('why-ads-bg.png') center center / cover no-repeat; position: relative; }
+.options::before { content: ''; position: absolute; inset: 0; background: rgba(245,245,240,.93); z-index: 0; }
+.options .container { position: relative; z-index: 1; }
 .options__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 
 .option-card {
