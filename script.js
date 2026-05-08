@@ -142,7 +142,7 @@
     const data = new FormData(form);
     const name = (data.get('firstName') || '') + ' ' + (data.get('lastName') || '');
 
-    fetch('https://formsubmit.co/ajax/ryanryousefi@gmail.com', {
+    fetch('https://formsubmit.co/ajax/Sharon@talkmediaconsulting.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
