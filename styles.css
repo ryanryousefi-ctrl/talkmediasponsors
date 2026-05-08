@@ -410,7 +410,9 @@ img[src="margate.jpg"] { border-radius: 50%; }
 .testimonial-card__author span  { font-size: 0.78rem; color: var(--text-muted); }
 
 /* ---- SPONSOR SPOTLIGHT ---- */
-.spotlight { padding: 100px 0; background: var(--off-white); }
+.spotlight { padding: 100px 0; background: url('broward-aerial-2.png') center center / cover no-repeat; position: relative; }
+.spotlight::before { content: ''; position: absolute; inset: 0; background: rgba(245,245,240,.90); z-index: 0; }
+.spotlight .container { position: relative; z-index: 1; }
 .spotlight__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 
 .spotlight-card {
