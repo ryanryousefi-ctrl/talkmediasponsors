@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(osascript -e 'tell application \"Finder\" to duplicate POSIX file \"/Users/ryanyousefi/Desktop/Screenshot 2026-05-08 at 12.57.13 PM.jpg\" to POSIX file \"/Users/ryanyousefi/TalkMedia/\"')",
+      "Bash(npx vercel *)",
+      "Bash(grep \"loc>\" /Users/ryanyousefi/dananghotelguide/sitemap.xml | tail -60)",
+      "Read(//Users/ryanyousefi/dananghotelguide/**)"
+    ]
+  }
+}
